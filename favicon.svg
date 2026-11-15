@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="lh"><rect x="0" y="0" width="24" height="48"/></clipPath>
+    <g id="arm"><path d="M24 24H4M10.5 24l-4-4M10.5 24l-4 4M16.5 24l-4-4M16.5 24l-4 4"/></g>
+  </defs>
+  <rect width="48" height="48" rx="10" fill="#ffffff"/>
+  <g clip-path="url(#lh)" fill="none" stroke="#0e7490" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#arm"/>
+    <use href="#arm" transform="rotate(60 24 24)"/>
+    <use href="#arm" transform="rotate(-60 24 24)"/>
+  </g>
+  <path d="M24 15.5a8.5 8.5 0 0 1 0 17z" fill="#ea580c"/>
+  <path d="M27.1 12.4l1.8-6.8M32.5 15.5l4.9-4.9M35.6 20.9l6.8-1.8M35.6 27.1l6.8 1.8M32.5 32.5l4.9 4.9M27.1 35.6l1.8 6.8" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-linecap="round"/>
+</svg>

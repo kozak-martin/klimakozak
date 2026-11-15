@@ -1,0 +1,11 @@
+# Netlify: bezpečnostné hlavičky a cache
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+/css/*
+  Cache-Control: public, max-age=2592000
+/js/*
+  Cache-Control: public, max-age=2592000
+/images/*
+  Cache-Control: public, max-age=15552000
