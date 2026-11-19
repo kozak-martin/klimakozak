@@ -585,3 +585,67 @@ html.js .site-nav.is-open { display: block; }
   .section-dark, .site-footer { background: none; color: #000; }
   .section-dark h2, .section-dark a, .contact-value { color: #000; }
 }
+
+/* ---------- Podstránka: ponuka klimatizácií ---------- */
+.page-hero {
+  background: linear-gradient(180deg, var(--c-bg-alt) 0%, #fff 100%);
+  padding-block: 28px 24px;
+}
+.page-hero h1 { font-size: clamp(1.9rem, 6vw, 2.9rem); }
+.page-hero .lead { margin-bottom: 0; }
+.section-tight { padding-top: 24px; }
+
+.breadcrumb ol { list-style: none; margin: 0 0 16px; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; font-size: .92rem; color: var(--c-muted); }
+.breadcrumb li + li::before { content: "›"; margin-right: .4rem; }
+
+.draft-note {
+  margin-top: 20px;
+  padding: 12px 16px;
+  border: 2px dashed var(--c-accent-graphic);
+  border-radius: 10px;
+  background: var(--c-accent-soft);
+  color: var(--c-accent-dark);
+}
+
+.models { display: grid; gap: 20px; }
+.model {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid var(--c-line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.model h3 { font-size: 1.35rem; margin-bottom: .6em; }
+.model-brand { display: block; font-size: .95rem; font-weight: 700; color: var(--c-primary); letter-spacing: .02em; }
+.model-tier {
+  align-self: flex-start;
+  margin: 0 0 12px;
+  padding: .2rem .7rem;
+  border-radius: 999px;
+  background: var(--c-primary-soft);
+  color: var(--c-primary-dark);
+  font-size: .85rem;
+  font-weight: 700;
+}
+.model .ticks { margin-bottom: 18px; }
+.model-prices { width: 100%; margin-top: auto; border-collapse: collapse; font-size: .98rem; }
+.model-prices th { text-align: left; font-size: .82rem; font-weight: 600; color: var(--c-muted); padding: 0 6px 6px 0; border-bottom: 1px solid var(--c-line); }
+.model-prices td { padding: 9px 6px 9px 0; border-bottom: 1px solid var(--c-line); white-space: nowrap; }
+.model-prices th:last-child, .model-prices td.price { text-align: right; padding-right: 0; }
+.model-prices td.price { font-weight: 800; color: var(--c-ink); white-space: nowrap; }
+.models-note { margin: 24px 0 0; color: var(--c-muted); max-width: 52rem; }
+
+@media (min-width: 640px) { .models { grid-template-columns: repeat(2, 1fr); } }
+
+.install-grid { display: grid; gap: 20px; }
+.install-box { padding: 24px; background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius); }
+.install-yes { border-top: 4px solid var(--c-primary); }
+.install-extra { border-top: 4px solid var(--c-accent-graphic); }
+.plus { list-style: none; margin: 0; padding: 0; }
+.plus li { position: relative; padding-left: 1.5rem; margin-top: .3rem; }
+.plus li::before { content: "+"; position: absolute; left: .1rem; top: 0; font-weight: 800; color: var(--c-accent-dark); }
+@media (min-width: 768px) { .install-grid { grid-template-columns: 1fr 1fr; } }
+
+.brands-more { margin-top: 20px; }
