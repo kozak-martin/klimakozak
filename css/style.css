@@ -650,3 +650,27 @@ html.js .site-nav.is-open { display: block; }
 @media (min-width: 768px) { .install-grid { grid-template-columns: 1fr 1fr; } }
 
 .brands-more { margin-top: 20px; }
+
+/* ---------- Jednotná cena montáže ---------- */
+.install-price {
+  display: grid;
+  gap: 2px 20px;
+  align-items: center;
+  margin-top: 24px;
+  padding: 20px 24px;
+  background: var(--c-dark);
+  color: #e6f2f5;
+  border-radius: var(--radius);
+}
+.install-price p { margin: 0; }
+.install-price-label { font-weight: 700; color: #fff; }
+.install-price-value { font-size: 1.9rem; font-weight: 800; color: #fff; line-height: 1.1; }
+.install-price-value span { font-size: 1rem; font-weight: 600; color: #cfe5ea; }
+.install-price-text { color: #cfe5ea; }
+.install-price a { color: #fff; }
+.install-price :focus-visible { outline-color: #fdba74; }
+@media (min-width: 768px) {
+  .install-price { grid-template-columns: auto 1fr; grid-template-rows: auto auto; }
+  .install-price-value { grid-column: 1; grid-row: 1 / span 2; padding-right: 8px; border-right: 1px solid rgba(255,255,255,.25); }
+  .install-price-label, .install-price-text { grid-column: 2; }
+}
