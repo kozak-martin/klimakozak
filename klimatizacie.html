@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <!--
   =====================================================================
-  PONUKA KLIMATIZÁCIÍ – modely sú ilustračné, ceny zatiaľ „od xxxx €“
+  PONUKA KLIMATIZÁCIÍ – ceny podľa cenových ponúk Radoslava Kozáka (2026)
   ---------------------------------------------------------------------
-  Pred zverejnením:
-  1. V každom <article class="model"> nahraďte značku, rad, vlastnosti
-     a riadky tabuľky (výkon, miestnosť, cena) skutočnými údajmi.
-     Ceny uvádzajte S DPH a S ZÁKLADNOU MONTÁŽOU.
-  2. Zmažte riadok <meta name="robots" content="noindex">
-     (kým sú ceny „xxxx“, stránka ostáva mimo Googlu).
+  Ceny „od“ = najnižšia nedávna ponuka na 1 jednotku do 1 miestnosti
+  (zariadenie + základná montáž), S DPH 23 %, zaokrúhlené nahor na 10 €.
+  Pri zmene cien uprav <td class="price"> v príslušnom <article class="model">.
   =====================================================================
 -->
 <html lang="sk">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ceny klimatizácií s montážou Košice – LG, Midea | Klima Kozák</title>
-  <meta name="description" content="Klimatizácie LG a Midea s montážou – modely, výkon a orientačné ceny vrátane základnej montáže. Košice, Prešov, Poprad a celý východ Slovenska.">
-  <meta name="robots" content="noindex">
+  <title>Ceny klimatizácií s montážou Košice – Midea, LG, Samsung | Klima Kozák</title>
+  <meta name="description" content="Ceny klimatizácií s montážou – Midea, LG a Samsung od 1 170 € s DPH vrátane základnej montáže. Košice, Prešov, Poprad a celý východ Slovenska.">
   <link rel="canonical" href="https://klimakozak.sk/klimatizacie.html">
   <meta name="theme-color" content="#0b4f63">
   <meta name="color-scheme" content="light">
@@ -36,7 +32,7 @@
   <meta property="og:image" content="https://klimakozak.sk/images/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="stylesheet" href="css/style.css?v=2026-11-19">
+  <link rel="stylesheet" href="css/style.css?v=2026-11-21">
   <script>document.documentElement.classList.add('js');</script>
   <script src="js/main.js?v=2026-11-19" defer></script>
 </head>
@@ -97,87 +93,113 @@
     <section class="section section-tight" aria-labelledby="modely-nadpis">
       <div class="container">
         <h2 id="modely-nadpis" class="visually-hidden">Modely klimatizácií</h2>
-        <div class="models">
+        <div class="models models-6">
 
-          <!-- PRÍKLAD 1 – nahradiť skutočným modelom -->
           <article class="model" aria-labelledby="m1">
-            <p class="model-tier">Základná trieda</p>
-            <h3 id="m1"><span class="model-brand">LG</span> Standard Plus</h3>
+            <p class="model-tier">Najdostupnejšia</p>
+            <h3 id="m1"><span class="model-brand">Midea</span> Solunar</h3>
             <ul class="ticks">
-              <li>chladenie aj kúrenie</li>
-              <li>úsporný invertorový kompresor</li>
-              <li>vhodná do spálne a&nbsp;detskej izby</li>
+              <li>invertorový kompresor, chladenie aj kúrenie</li>
+              <li>tichý a&nbsp;nočný režim</li>
+              <li>diaľkový ovládač s&nbsp;časovačom</li>
+            </ul>
+            <table class="model-prices">
+              <caption class="visually-hidden">Midea Solunar – výkon a cena s montážou</caption>
+              <thead><tr><th scope="col">Výkon</th><th scope="col">Miestnosť</th><th scope="col">S montážou</th></tr></thead>
+              <tbody>
+                <tr><td>3,5&nbsp;kW</td><td>do ~35&nbsp;m²</td><td class="price">od 1&nbsp;170&nbsp;€</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="model" aria-labelledby="m2">
+            <p class="model-tier">Bez prievanu</p>
+            <h3 id="m2"><span class="model-brand">Midea</span> Breezeless&nbsp;E</h3>
+            <ul class="ticks">
+              <li>deflektor s&nbsp;mikrootvormi – chladí bez prievanu</li>
+              <li>samočistenie i-Clean a&nbsp;UV-C</li>
+              <li>ovládanie cez aplikáciu v&nbsp;mobile</li>
+            </ul>
+            <table class="model-prices">
+              <caption class="visually-hidden">Midea Breezeless E – výkon a cena s montážou</caption>
+              <thead><tr><th scope="col">Výkon</th><th scope="col">Miestnosť</th><th scope="col">S montážou</th></tr></thead>
+              <tbody>
+                <tr><td>3,5&nbsp;kW</td><td>do ~35&nbsp;m²</td><td class="price">od 1&nbsp;230&nbsp;€</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="model" aria-labelledby="m3">
+            <p class="model-tier">Základná trieda</p>
+            <h3 id="m3"><span class="model-brand">LG</span> Standard Plus</h3>
+            <ul class="ticks">
+              <li>Dual Inverter kompresor, tichý chod od 19&nbsp;dB</li>
+              <li>ionizátor a&nbsp;antialergický filter</li>
+              <li>Wi-Fi ovládanie z&nbsp;mobilu</li>
             </ul>
             <table class="model-prices">
               <caption class="visually-hidden">LG Standard Plus – výkon a cena s montážou</caption>
               <thead><tr><th scope="col">Výkon</th><th scope="col">Miestnosť</th><th scope="col">S montážou</th></tr></thead>
               <tbody>
-                <tr><td>2,5&nbsp;kW</td><td>do ~25&nbsp;m²</td><td class="price">od xxxx&nbsp;€</td></tr>
-                <tr><td>3,5&nbsp;kW</td><td>do ~35&nbsp;m²</td><td class="price">od xxxx&nbsp;€</td></tr>
+                <tr><td>3,5&nbsp;kW</td><td>do ~35&nbsp;m²</td><td class="price">od 1&nbsp;450&nbsp;€</td></tr>
               </tbody>
             </table>
           </article>
 
-          <!-- PRÍKLAD 2 – nahradiť skutočným modelom -->
-          <article class="model" aria-labelledby="m2">
-            <p class="model-tier">Základná trieda</p>
-            <h3 id="m2"><span class="model-brand">Midea</span> Xtreme Save</h3>
-            <ul class="ticks">
-              <li>chladenie aj kúrenie</li>
-              <li>ovládanie cez Wi-Fi z&nbsp;mobilu</li>
-              <li>dobrý pomer ceny a&nbsp;výkonu</li>
-            </ul>
-            <table class="model-prices">
-              <caption class="visually-hidden">Midea Xtreme Save – výkon a cena s montážou</caption>
-              <thead><tr><th scope="col">Výkon</th><th scope="col">Miestnosť</th><th scope="col">S montážou</th></tr></thead>
-              <tbody>
-                <tr><td>2,6&nbsp;kW</td><td>do ~25&nbsp;m²</td><td class="price">od xxxx&nbsp;€</td></tr>
-                <tr><td>3,5&nbsp;kW</td><td>do ~35&nbsp;m²</td><td class="price">od xxxx&nbsp;€</td></tr>
-              </tbody>
-            </table>
-          </article>
-
-          <!-- PRÍKLAD 3 – nahradiť skutočným modelom -->
-          <article class="model" aria-labelledby="m3">
-            <p class="model-tier">Stredná trieda</p>
-            <h3 id="m3"><span class="model-brand">LG</span> Dualcool Deluxe</h3>
-            <ul class="ticks">
-              <li>tichší chod a&nbsp;vyššia účinnosť</li>
-              <li>ovládanie cez Wi-Fi z&nbsp;mobilu</li>
-              <li>vhodná aj na prikurovanie v&nbsp;zime</li>
-            </ul>
-            <table class="model-prices">
-              <caption class="visually-hidden">LG Dualcool Deluxe – výkon a cena s montážou</caption>
-              <thead><tr><th scope="col">Výkon</th><th scope="col">Miestnosť</th><th scope="col">S montážou</th></tr></thead>
-              <tbody>
-                <tr><td>2,5&nbsp;kW</td><td>do ~25&nbsp;m²</td><td class="price">od xxxx&nbsp;€</td></tr>
-                <tr><td>3,5&nbsp;kW</td><td>do ~35&nbsp;m²</td><td class="price">od xxxx&nbsp;€</td></tr>
-              </tbody>
-            </table>
-          </article>
-
-          <!-- PRÍKLAD 4 – nahradiť skutočným modelom -->
           <article class="model" aria-labelledby="m4">
-            <p class="model-tier">Prémiová trieda</p>
-            <h3 id="m4"><span class="model-brand">Midea</span> Breezeless+</h3>
+            <p class="model-tier">Bez prievanu</p>
+            <h3 id="m4"><span class="model-brand">Samsung</span> Wind-Free Comfort</h3>
             <ul class="ticks">
-              <li>jemné prúdenie vzduchu bez prievanu</li>
-              <li>vysoká účinnosť pri chladení aj kúrení</li>
-              <li>ovládanie cez Wi-Fi z&nbsp;mobilu</li>
+              <li>režim Wind-Free – udržiava teplotu bez priameho prúdu vzduchu</li>
+              <li>Digital Inverter, tichý chod od 19&nbsp;dB</li>
+              <li>zabudovaná Wi-Fi</li>
             </ul>
             <table class="model-prices">
-              <caption class="visually-hidden">Midea Breezeless+ – výkon a cena s montážou</caption>
+              <caption class="visually-hidden">Samsung Wind-Free Comfort – výkon a cena s montážou</caption>
               <thead><tr><th scope="col">Výkon</th><th scope="col">Miestnosť</th><th scope="col">S montážou</th></tr></thead>
               <tbody>
-                <tr><td>2,6&nbsp;kW</td><td>do ~25&nbsp;m²</td><td class="price">od xxxx&nbsp;€</td></tr>
-                <tr><td>3,5&nbsp;kW</td><td>do ~35&nbsp;m²</td><td class="price">od xxxx&nbsp;€</td></tr>
+                <tr><td>3,5&nbsp;kW</td><td>do ~35&nbsp;m²</td><td class="price">od 1&nbsp;480&nbsp;€</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="model" aria-labelledby="m5">
+            <p class="model-tier">Vyššia trieda</p>
+            <h3 id="m5"><span class="model-brand">LG</span> Dualcool AIR Deluxe</h3>
+            <ul class="ticks">
+              <li>jemné prúdenie vzduchu, dvojitá lamela</li>
+              <li>detektor otvoreného okna, čistenie mrazom</li>
+              <li>Wi-Fi ovládanie z&nbsp;mobilu</li>
+            </ul>
+            <table class="model-prices">
+              <caption class="visually-hidden">LG Dualcool AIR Deluxe – výkon a cena s montážou</caption>
+              <thead><tr><th scope="col">Výkon</th><th scope="col">Miestnosť</th><th scope="col">S montážou</th></tr></thead>
+              <tbody>
+                <tr><td>3,5&nbsp;kW</td><td>do ~35&nbsp;m²</td><td class="price">od 1&nbsp;840&nbsp;€</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="model" aria-labelledby="m6">
+            <p class="model-tier">Dizajnová</p>
+            <h3 id="m6"><span class="model-brand">LG</span> Artcool Mirror</h3>
+            <ul class="ticks">
+              <li>vnútorná jednotka so zrkadlovým čelom</li>
+              <li>Dual Inverter, detektor otvoreného okna</li>
+              <li>Wi-Fi ovládanie z&nbsp;mobilu</li>
+            </ul>
+            <table class="model-prices">
+              <caption class="visually-hidden">LG Artcool Mirror – výkon a cena s montážou</caption>
+              <thead><tr><th scope="col">Výkon</th><th scope="col">Miestnosť</th><th scope="col">S montážou</th></tr></thead>
+              <tbody>
+                <tr><td>3,5&nbsp;kW</td><td>do ~35&nbsp;m²</td><td class="price">od 1&nbsp;850&nbsp;€</td></tr>
               </tbody>
             </table>
           </article>
 
         </div>
 
-        <p class="models-note">Ceny sú uvedené s&nbsp;DPH a&nbsp;zahŕňajú zariadenie aj základnú montáž. Veľkosť miestnosti je orientačná – vhodný výkon závisí aj od zateplenia, veľkosti okien a&nbsp;ich orientácie. Na želanie namontujem aj iné značky a&nbsp;modely.</p>
+        <p class="models-note">Ceny sú uvedené s&nbsp;DPH a&nbsp;zahŕňajú zariadenie aj základnú montáž jednej jednotky do jednej miestnosti. Pri viacerých miestnostiach (aj s&nbsp;jednou spoločnou vonkajšou jednotkou) pripravím ponuku na mieru. Veľkosť miestnosti je orientačná – vhodný výkon závisí aj od zateplenia, veľkosti okien a&nbsp;ich orientácie. Na želanie namontujem aj iné značky a&nbsp;modely.</p>
       </div>
     </section>
 
@@ -191,9 +213,12 @@
           <div class="install-box install-yes">
             <h3>V&nbsp;cene základnej montáže</h3>
             <ul class="ticks">
-              <li>medené potrubie</li>
+              <li>izolované medené potrubie a&nbsp;komunikačný kábel</li>
+              <li>konzola a&nbsp;kotvenie vonkajšej jednotky</li>
+              <li>odvod kondenzátu, PVC lišty a&nbsp;tvarovky</li>
               <li>prieraz stenou</li>
               <li>zapojenie do elektrickej siete</li>
+              <li>chladivo a&nbsp;spotrebný materiál</li>
               <li>spustenie a&nbsp;odskúšanie zariadenia</li>
               <li>ručný (diaľkový) ovládač</li>
             </ul>
@@ -201,7 +226,6 @@
           <div class="install-box install-extra">
             <h3>Za príplatok</h3>
             <ul class="plus">
-              <li>konzola pre vonkajšiu jednotku</li>
               <li>komplikovaná montáž</li>
               <li>predĺženie potrubia pri dlhej trase</li>
               <li>nástenný ovládač</li>

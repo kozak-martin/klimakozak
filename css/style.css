@@ -638,6 +638,7 @@ html.js .site-nav.is-open { display: block; }
 .models-note { margin: 24px 0 0; color: var(--c-muted); max-width: 52rem; }
 
 @media (min-width: 640px) { .models { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1080px) { .models-6 { grid-template-columns: repeat(3, 1fr); } }
 
 .install-grid { display: grid; gap: 20px; }
 .install-box { padding: 24px; background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius); }
